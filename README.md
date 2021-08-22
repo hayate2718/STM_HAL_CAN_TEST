@@ -1,0 +1,2 @@
+# STM_HAL_CAN_TEST
+HALを用いたCAN通信のテスト用プログラム
