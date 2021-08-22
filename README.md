@@ -10,5 +10,21 @@ can通信のループバックモードを用いることでトランシーバ�
 |cantx|PA12(D2)|
 |gpio|PB3(D13)|
 
+## MX設定
+|config|parameter|
+|---|---|
+|prescaler|4|
+|TQB1|5|
+|TQB2|2|
+|RSJ|1|
+|BaudRate|1Mbps|
+|TTC|0|
+|ABusOffM|1|
+|AWakeUpM|1|
+|ARetransission|1|
+|RFL|0|
+|TFP|0|
+|OperatingM|loopback|
+
 ## コード注意
 割り込みの優先順位を特に設定していないことにより、HAL_Delay()関数とメッセージ読みこみの割り込みコールバック関数と干渉するため、time_f変数によって無理やり干渉しないようにしている。
